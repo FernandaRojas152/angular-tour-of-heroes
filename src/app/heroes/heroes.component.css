@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 /* HeroesComponent's private CSS styles */
-h2{
+h2 {
   font-family: 'Poppins', sans-serif;
 }
+
+input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
 .heroes {
   display: flex;
   justify-content: space-around;
@@ -11,6 +21,7 @@ h2{
   list-style-type: none;
   padding: 0;
 }
+
 .heroes li {
   position: relative;
   cursor: pointer;
@@ -35,54 +46,13 @@ h2{
 
 .heroes a:hover {
   color: #2c3a41;
-  background-color: #e6e6e6;
+  background-color: #DCCCFF;
 }
 
 .heroes a:active {
   background-color: #B82117;
   color: #fafafa;
 }
-
-/* .heroes button {
-  flex: 1;
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: 0;
-  border-radius: 8px;
-  border: none;
-  display: flex;
-  align-items: stretch;
-  height: 2.5em;
-}
-
-.heroes button:hover {
-  color: #2c3a41;
-  background-color: #e6e6e6;
-  left: .1em;
-}
-
-.heroes button:active {
-  background-color: #525252;
-  color: #fafafa;
-}
-
-.heroes button.selected {
-  background-color:#B82117;
-  color: white;
-}
-
-.heroes button.selected:hover {
-  background-color: #f6343c;
-  color: white;
-}
-
-.heroes button.selected:active {
-  background-color: #471E2F;
-  color: white;
-} */
 
 .heroes .badge {
   font-family: 'Titillium Web', sans-serif;
@@ -101,17 +71,41 @@ h2{
   text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
-  /* background-color: #405061;
-  margin-right: .8em;
-  line-height: 2em;
-  vertical-align: middle;
-  border-radius: 10px;
-  width: 2em; */
 }
-
 
 .heroes .name {
   font-family: 'Archivo', sans-serif;
   align-self: center;
   font-size: 16px;
+}
+
+.add-button {
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: #5DA399;
+}
+
+button.delete {
+  border: none;
+  position: absolute;
+  top: 0;
+  right:-10px;
+  background-color: #D24B6D;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+}
+
+button.delete:hover {
+  background-color: #63192C;
+  color: white;
 }
